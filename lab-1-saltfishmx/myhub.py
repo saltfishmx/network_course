@@ -10,10 +10,12 @@ from switchyard.lib.userlib import *
 def main(net: switchyard.llnetbase.LLNetBase):
     my_interfaces = net.interfaces()
     mymacs = [intf.ethaddr for intf in my_interfaces]
-
+    in_num = 0
+    out_num = 0
     while True:
         try:
             _, fromIface, packet = net.recv_packet()
+            in_num += 1
         except NoPackets:
             continue
         except Shutdown:
@@ -31,5 +33,6 @@ def main(net: switchyard.llnetbase.LLNetBase):
                 if fromIface!= intf.name:
                     log_info (f"Flooding packet {packet} to {intf.name}")
                     net.send_packet(intf, packet)
-
+                    out_num += 1
+        log_info(f"in:{in_num} out:{out_num}")
     net.shutdown()
