@@ -1,0 +1,83 @@
+2021/06/02-11:53:30| [INFO] DNS server started
+DNS server serving on 0.0.0.0:8010
+2021/06/02-11:53:32| [Info] Receving DNS request from '10.0.0.24' asking for 'stfw.localhost.computer.'
+reqDomain:stfw.localhost.computer.,have:homepage.cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.cncourse.org.
+
+sub:localhost.computer.,item.domain[2:]:cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.netlab.org.
+
+sub:localhost.computer.,item.domain[2:]:netlab.org.
+
+reqDomain:stfw.localhost.computer.,have:home.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:lab.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:*.localhost.computer
+
+sub:localhost.computer.,item.domain[2:]:localhost.computer
+
+match1!
+
+item[0]=*.localhost.computer,<class 'str'>
+
+item[1]=A,<class 'str'>
+
+item:DNSItem(domain='*.localhost.computer', type='A', values=['10.0.0.23'])
+
+2021/06/02-11:53:37| [Info] Receving DNS request from '10.0.0.24' asking for 'stfw.localhost.computer.'
+reqDomain:stfw.localhost.computer.,have:homepage.cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.cncourse.org.
+
+sub:localhost.computer.,item.domain[2:]:cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.netlab.org.
+
+sub:localhost.computer.,item.domain[2:]:netlab.org.
+
+reqDomain:stfw.localhost.computer.,have:home.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:lab.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:*.localhost.computer
+
+sub:localhost.computer.,item.domain[2:]:localhost.computer
+
+match1!
+
+item[0]=*.localhost.computer,<class 'str'>
+
+item[1]=A,<class 'str'>
+
+item:DNSItem(domain='*.localhost.computer', type='A', values=['10.0.0.23'])
+
+2021/06/02-11:53:37| [Info] Receving DNS request from '10.0.0.24' asking for 'stfw.localhost.computer.'
+reqDomain:stfw.localhost.computer.,have:homepage.cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.cncourse.org.
+
+sub:localhost.computer.,item.domain[2:]:cncourse.org.
+
+reqDomain:stfw.localhost.computer.,have:*.netlab.org.
+
+sub:localhost.computer.,item.domain[2:]:netlab.org.
+
+reqDomain:stfw.localhost.computer.,have:home.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:lab.nasa.org.
+
+reqDomain:stfw.localhost.computer.,have:*.localhost.computer
+
+sub:localhost.computer.,item.domain[2:]:localhost.computer
+
+match1!
+
+item[0]=*.localhost.computer,<class 'str'>
+
+item[1]=A,<class 'str'>
+
+item:DNSItem(domain='*.localhost.computer', type='A', values=['10.0.0.23'])
+

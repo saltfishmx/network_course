@@ -1,0 +1,20 @@
+2021/06/02-11:53:30| [INFO] Caching server started
+Caching server serving on http://0.0.0.0:8010
+path=/doc/success.jpg
+
+cachetable looks like: {}
+
+2021/06/02-11:53:33| [Info] Fetched '/doc/success.jpg' from main server '20.188.122.123:8888'
+2021/06/02-11:53:36| [From 10.0.0.24:39746] "GET /doc/success.jpg HTTP/1.1" 200 -
+path=/doc/success.jpg
+
+cachetable looks like: {'/doc/success.jpg': <cachingServer.cacheTable.HTTPCacheItem object at 0x7f28a2da5cc0>}
+
+2021/06/02-11:53:37| [From 10.0.0.24:39748] "GET /doc/success.jpg HTTP/1.1" 200 -
+path=/noneexist
+
+cachetable looks like: {'/doc/success.jpg': <cachingServer.cacheTable.HTTPCacheItem object at 0x7f28a2da5cc0>}
+
+2021/06/02-11:53:38| [Error] File not found on main server '20.188.122.123:8888'
+2021/06/02-11:53:38| [From 10.0.0.24:39750] code 404, message 'File not found'
+2021/06/02-11:53:38| [From 10.0.0.24:39750] "GET /noneexist HTTP/1.1" 404 -
